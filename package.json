@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
-    "start": "node server.js"
+    "start": "node server"
   },
   "author": "Thomas Alvarenga (thomas@mindsetboaspraticas.com.br)",
   "license": "MIT",
