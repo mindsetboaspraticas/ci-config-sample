@@ -4,7 +4,7 @@
   "description": "A sample to show how to configure a CI in node applications",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "start": "node server.js"
   },
   "author": "Thomas Alvarenga (thomas@mindsetboaspraticas.com.br)",
@@ -16,5 +16,15 @@
   "devDependencies": {
     "jest": "^20.0.4",
     "supertest": "^3.0.0"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
   }
 }
