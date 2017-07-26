@@ -11,6 +11,6 @@ app.post('/sum', (req, res) => {
   res.status(200).send({ result });
 });
 
-const server = app.listen(3000, () => console.log('Server running!'));
+const server = app.listen(process.env.PORT || 3000, () => console.log('Server running!'));
 
 module.exports = server;
